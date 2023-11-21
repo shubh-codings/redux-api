@@ -15,9 +15,9 @@ function App() {
     <h1>Api call via Redux</h1>
     <input type="text" placeholder='UserName' value={user.userName} onChange={e=>setUser({...user,userName:e.target.value})}/>
     <input type="text" placeholder='Password' value={user.password} onChange={e=>setUser({...user, password:e.target.value})}/>
-    <button onClick={()=>dispatch(login(user))} >Login</button>
+    <button onClick={()=>dispatch(login())} >Login</button>
     <div>
-      {state.userData.data && <ul><li>{state.userData.data.name}</li><li>{state.userData.data.empId}</li><li>{state.userData.data.role}</li><li>{state.userData.data.mobile}</li><li>{state.userData.data.email}</li><li>{state.userData.data.department}</li><li>{state.userData.data.designation}</li><li>{state.userData.data.gender}</li></ul>}
+      {state.userData.data && <ul><li>{state.userData.data.name}</li></ul>}
 
     </div>
     </>
