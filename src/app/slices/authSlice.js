@@ -1,9 +1,12 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios"
 
-export const login = createAsyncThunk("login", async(user)=>{
+export const login = createAsyncThunk("login", async()=>{
     // console.log(user)
-    const response = await axios.post("https://ams-api.biztimeline.com/auth/login",user)
+    const response = await axios.post("https://reqres.in/api/login",{
+    "email": "eve.holt@reqres.in",
+    "password": "cityslicka"
+})
     return response.data
 })
 
