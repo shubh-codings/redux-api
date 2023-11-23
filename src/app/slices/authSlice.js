@@ -7,6 +7,7 @@ export const login = createAsyncThunk("login", async()=>{
     "email": "eve.holt@reqres.in",
     "password": "cityslicka"
 })
+    console.log(response)
     return response.data
 })
 
