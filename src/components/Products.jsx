@@ -47,7 +47,6 @@ function Products() {
     </Col>
   ))
   // console.log(data)
-  if (products.isLoading === 'fetched') {
     return (
       <Container fluid>
         <Row className='text-center'>
@@ -57,7 +56,6 @@ function Products() {
       </Container>
     )
   }
-}
 
 export default Products;
 
